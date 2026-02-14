@@ -1,83 +1,68 @@
-# 🛡️ PasswordLab: Advanced Cryptographic & Forensic Research Suite
+# 🛡️ PasswordLab: Mobile Cryptographic Forensics Suite
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform: Termux](https://img.shields.io/badge/Platform-Termux-green.svg)](https://termux.dev/)
-[![Arch: aarch64](https://img.shields.io/badge/Architecture-aarch64-blue.svg)]()
+<div align="center">
 
-**PasswordLab** is a high-performance, native-compiled authentication research environment optimized for ARM64 architectures. This repository serves as a laboratory for analyzing cryptographic hash strength, password entropy, and the efficiency of parallelized brute-force algorithms on mobile SoC (System on a Chip) hardware.
+[![License: MIT](https://img.shields.io/badge/License-MIT-F9AB00.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Platform: Termux](https://img.shields.io/badge/Platform-Termux-00CC00.svg?style=flat-square)](https://termux.dev/)
+[![Architecture: aarch64](https://img.shields.io/badge/Architecture-ARM64-0075DB.svg?style=flat-square)]()
+
+**A high-performance, native-compiled authentication research environment optimized for Android (ARM64).**
+
+[Report Bug](https://github.com/myselfkshitiz/PasswordLab/issues) • [Request Feature](https://github.com/myselfkshitiz/PasswordLab/issues)
+
+</div>
 
 ---
 
-## 📊 Technical Benchmarks: Native vs. Interpreted
-The core of this lab is built on **John the Ripper (Bleeding-Jumbo)**, compiled directly on-device to leverage specialized CPU instructions (NEON/ASIMD).
+## 📖 Table of Contents
+- [Project Overview](#-project-overview)
+- [Technical Benchmarks](#-technical-benchmarks)
+- [Installation](#-installation)
+- [Usage Guide](#-usage-guide)
+- [Advanced Methodologies](#-advanced-methodologies)
+- [Legal & Ethical Disclosure](#-legal--ethical-disclosure)
 
-### Performance Metrics (PDF-AES256)
-| Engine | Language | Execution Mode | Throughput | Efficiency |
+---
+
+## 🧐 Project Overview
+
+**PasswordLab** is a specialized research framework designed to bridge the gap between desktop-grade forensic tools and mobile hardware. By compiling **John the Ripper (Bleeding-Jumbo)** directly on-device using Clang/LLVM within Termux, this lab unlocks the full potential of ARM64 processors.
+
+
+
+---
+
+## 📊 Technical Benchmarks
+
+| Engine | Language | Execution Mode | Hash Rate | Efficiency |
 | :--- | :--- | :--- | :--- | :--- |
-| **pikepdf** | Python | Single-Threaded | ~100 c/s | 2.1% |
-| **JtR (Standard)** | C | Single-Threaded | ~600 c/s | 12.5% |
+| **pikepdf** | Python | Single-Thread | ~100 c/s | 2.1% |
+| **JtR (Standard)** | C | Single-Thread | ~600 c/s | 12.5% |
 | **PasswordLab** | **Native C** | **Multi-Thread (OpenMP)** | **4,800+ c/s** | **100%** |
 
-
-
 ---
 
-## 🏗️ Architecture & Component Analysis
-
-### 1. Core Engine (`/run/john`)
-The primary binary is optimized for **OpenMP (Open Multi-Processing)**. On an 8-core mobile processor, the workload is distributed as follows:
-* **Threads 0-3:** High-performance "Big" cores (Max clock).
-* **Threads 4-7:** Efficiency "Little" cores (Background processing).
-
-### 2. Pre-Processor Scripts (`*2john`)
-A collection of specialized parsers used to strip metadata and extract raw cryptographic hashes from various file formats:
-* `pdf2john.pl`: Extracts revision and permissions flags from PDF 1.7+ files.
-* `zip2john`: Identifies PKZip vs. WinZip (AES) encryption headers.
-* `rar2john`: Handles complex RAR5 VM-based derivation.
-
----
-
-## 🛠️ Deployment & Maintenance
-
-### Automated Environment Setup
-To replicate this research environment on a clean Termux instance:
+## ⚡ Installation
 
 \`\`\`bash
-# Install Git and Clone the Lab
-pkg install git -y
 git clone https://github.com/myselfkshitiz/PasswordLab.git ~/PasswordLab
-
-# Deploy Environment
 cd ~/PasswordLab
 chmod +x deploy_lab.sh
 ./deploy_lab.sh
 \`\`\`
 
-### Troubleshooting Library Linkage
-If you encounter `libomp.so` errors after an Android OS update, run the repair sequence:
-\`\`\`bash
-pkg update && pkg install libomp -y
-\`\`\`
+---
+
+## ⚖️ Legal & Ethical Disclosure
+
+**⚠️ FOR EDUCATIONAL USE ONLY**
+The maintainers (`myselfkshitiz`) accept no responsibility for any misuse of this software. Ensure your actions comply with local laws (e.g., IT Act in India).
 
 ---
 
-## 🧠 Advanced Methodology
+<div align="center">
 
-### Hybrid Attack Strategy
-1. **Dictionary Phase:** Utilizing `rockyou.txt` with basic mangling.
-2. **Single-Crack Mode:** Leveraging file metadata (names, titles) as potential keys.
-3. **Incremental Brute-Force:** Exhaustive search for passwords < 8 characters.
-
-
-
----
-
-## ⚖️ Ethical Disclosure
-This project is for **Educational Purposes Only**. The goal is to highlight the vulnerability of legacy encryption and the necessity of high-entropy, salted passwords. 
-* Unauthorized access to private data is illegal.
-* Always use this lab in a controlled, "white-hat" environment.
-
----
 **Lead Researcher:** [myselfkshitiz](https://github.com/myselfkshitiz)  
-**Location:** Termux / aarch64 Laboratory  
-**Status:** Active Research Phase
+**Lab Location:** Termux / aarch64 Laboratory  
+
+</div>
