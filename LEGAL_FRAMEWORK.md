@@ -84,5 +84,5 @@ The Researcher is prepared to cooperate fully with legitimate legal inquiries to
 **Authenticated By:** myselfkshitiz
 **Role:** Principal Security Researcher
 **System Context:** Android ARM64 / Termux Lab
-**Date of Ratification:** $(date +"%Y-%m-%d")
+**Date of Ratification:** 15 February, 2026
 --------------------------------------------------------------------------------
