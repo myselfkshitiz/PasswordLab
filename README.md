@@ -7,9 +7,7 @@
 ![Architecture](https://img.shields.io/badge/Architecture-ARM64-blue?style=for-the-badge)
 ![Compiler](https://img.shields.io/badge/Compiler-Clang%2FLLVM-red?style=for-the-badge)
 ![Optimization](https://img.shields.io/badge/Optimization-O3-orange?style=for-the-badge)
-![Research](https://img.shields.io/badge/Focus-Mobile%20Cryptography-purple?style=for-the-badge)
-![Build](https://img.shields.io/badge/Build-Reproducible-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![License](https://img.shields.io/badge/Legal-Compliant-success?style=for-the-badge)
 
 ### High-Performance Native Password Auditing Environment for Android
 
@@ -75,12 +73,6 @@ PasswordLab         | ███████████████████�
 
 ---
 
-# 🔋 Energy Efficiency
-
-PasswordLab improves performance-per-watt through reduced execution time and balanced CPU utilization.
-
----
-
 # ⚡ Installation
 
 ## Requirements
@@ -110,19 +102,15 @@ python3 pdf2john.py protected.pdf > hash.txt
 
 ---
 
-# 🔁 CI Placeholder
+# ⚖️ Legal & Ethical Policy
 
-GitHub Actions support planned for automated benchmark validation.
+**MANDATORY READING:**
+Usage of this repository is strictly governed by the [LEGAL_FRAMEWORK.md](LEGAL_FRAMEWORK.md) document included in this repository.
 
----
-
-# 🔐 Ethical Policy
-
-Research and educational use only.
-
-India Legal Reference:
-- IT Act 2000 Section 43  
-- IT Act 2000 Section 66  
+**Summary:**
+- **No Unauthorized Access:** Strictly compliant with IT Act 2000 Section 43.
+- **Academic Purpose:** Intent is limited to hardware benchmarking and authorized forensics.
+- **India Legal Reference:** IT Act 2000 (Sec 43, 66), IPC (Sec 52 Good Faith).
 
 ---
 
