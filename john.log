@@ -1,0 +1,56 @@
+0:00:00:00 Starting a new session
+0:00:00:00 Loaded a total of 1 password hash
+0:00:00:00 Cost 1 (revision) is 6 for all loaded hashes
+0:00:00:00 Cost 2 (key length) is 256 for all loaded hashes
+0:00:00:00 Command line: /data/data/com.termux/files/home/john/run/john --mask=?d?d?d?d?d?d lost1.hash 
+0:00:00:00 - UTF-8 input encoding enabled
+0:00:00:00 - Passwords will be stored UTF-8 encoded in .pot file
+0:00:00:00 Autotune found best speed at OMP scale of 16
+0:00:00:00 - Hash type: PDF, PDF encrypted document (min-len 0, max-len 106 [worst case UTF-8] to 319 [ASCII])
+0:00:00:00 - Algorithm: MD5-RC4 / SHA2-AES 32/64
+0:00:00:00 - Will reject candidates longer than 319 bytes
+0:00:00:00 Proceeding with mask mode
+0:00:00:00 - Candidate passwords will be buffered and tried in chunks of 512
+0:00:00:00 - No stacked rules
+0:00:03:10 + Cracked /data/data/com.termux/files/home/storage/shared/lost/secured_lost1.pdf
+0:00:03:10 Passwords tested: 867328 (all time)
+0:00:03:10  dupe suppressor: 0 accepted, 0 rejected out of total 0 (while active during this run)
+0:00:03:10 Session completed
+0:00:00:00 Starting a new session
+0:00:00:00 Loaded a total of 1 password hash
+0:00:00:00 Cost 1 (revision) is 6 for all loaded hashes
+0:00:00:00 Cost 2 (key length) is 256 for all loaded hashes
+0:00:00:00 Command line: /data/data/com.termux/files/home/john/run/john --mask=?d?d?d?d?d?d /data/data/com.termux/files/home/work/hashes/lost1.hash 
+0:00:00:00 - UTF-8 input encoding enabled
+0:00:00:00 - Passwords will be stored UTF-8 encoded in .pot file
+0:00:00:00 Autotune found best speed at OMP scale of 8
+0:00:00:00 - Hash type: PDF, PDF encrypted document (min-len 0, max-len 106 [worst case UTF-8] to 319 [ASCII])
+0:00:00:00 - Algorithm: MD5-RC4 / SHA2-AES 32/64
+0:00:00:00 - Will reject candidates longer than 319 bytes
+0:00:00:00 Proceeding with mask mode
+0:00:00:00 - Candidate passwords will be buffered and tried in chunks of 512
+0:00:00:00 - No stacked rules
+0:00:00:11 Passwords tested: 59392 (all time)
+0:00:00:11  dupe suppressor: 0 accepted, 0 rejected out of total 0 (while active during this run)
+0:00:00:11 Session aborted
+0:00:00:00 Starting a new session
+0:00:00:00 Loaded a total of 1 password hash
+0:00:00:00 Cost 1 (revision) is 6 for all loaded hashes
+0:00:00:00 Cost 2 (key length) is 256 for all loaded hashes
+0:00:00:00 Command line: /data/data/com.termux/files/home/john/run/john --wordlist=/data/data/com.termux/files/home/work/wordlists/rockyou.txt /data/data/com.termux/files/home/work/hashes/lost1.hash 
+0:00:00:00 - UTF-8 input encoding enabled
+0:00:00:00 - Passwords will be stored UTF-8 encoded in .pot file
+0:00:00:00 Autotune found best speed at OMP scale of 16
+0:00:00:00 - Hash type: PDF, PDF encrypted document (min-len 0, max-len 106 [worst case UTF-8] to 319 [ASCII])
+0:00:00:00 - Algorithm: MD5-RC4 / SHA2-AES 32/64
+0:00:00:00 - Will reject candidates longer than 319 bytes
+0:00:00:00 - Candidate passwords will be buffered and tried in chunks of 512
+0:00:00:00 Proceeding with wordlist mode
+0:00:00:00 - Wordlist file: /data/data/com.termux/files/home/work/wordlists/rockyou.txt
+0:00:00:00 - Memory mapping wordlist (139921525 bytes)
+0:00:00:00 - No word mangling rules
+0:00:00:00 - No stacked rules
+0:00:01:39 + Cracked /data/data/com.termux/files/home/storage/shared/lost/secured_lost1.pdf
+0:00:01:39 Passwords tested: 446464 (all time)
+0:00:01:39  dupe suppressor: 0 accepted, 0 rejected out of total 0 (while active during this run)
+0:00:01:39 Session completed
